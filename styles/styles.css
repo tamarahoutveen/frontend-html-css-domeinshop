@@ -1,0 +1,196 @@
+/*////////////////////////////////////////////////////////////////////////
+Table of Contents:
+    1. Global Styles
+    2. Typografie
+    3. Areas
+        3.1 Header
+        3.2 Testimonial
+        3.3 Support
+        3.4 Faq
+        3.5 Footer
+////////////////////////////////////////////////////////////////////////*/
+
+/*Font import*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*CSS reset*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+/*CSS Variabelen instellen*/
+:root{
+   --branding-gray:#899CA0;
+    --branding-darkgreen: #1C2B32;
+    /*--branding-darkgreen-hover: #203139;*/
+}
+
+
+/*////////////////////////
+    1. Global Styles
+////////////////////////*/
+
+main{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+img{
+    max-width: 100%;
+}
+button{
+    border:none;
+    padding:18px 24px;
+    background:var(--branding-darkgreen);
+    color:#fff;
+    cursor: pointer;
+    border-radius: 25px;
+}
+/*////////////////////////
+    2. Typography
+////////////////////////*/
+body{
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-size:14px;
+    color:var(--branding-darkgreen);
+}
+h2{
+    font-size: 2em;
+    margin: 50px 0;
+    text-align: center;
+}
+p{
+    line-height: 1.6;
+}
+a{
+    color:var(--branding-gray);
+    text-decoration: underline;
+}
+a:hover{
+    text-decoration: none;
+}
+
+/*////////////////////////
+    3. Areas
+////////////////////////*/
+
+
+
+/*///////////// 3.1 Header /////////////*/
+
+header{
+    background-image: url("../assets/images/mountains.jpg");
+    background-position: center center;
+    background-size: cover;
+}
+.header-content{
+    position: relative;
+    padding:80px 100px 280px 100px;
+    max-width:1000px;
+    margin:0 auto;
+    text-align: center;
+}
+.header-content h1{
+    font-size:6em;
+}
+.header-content p{
+    font-size: 0.9em;
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+.header-content input[type="text"]{
+    background:transparent;
+    color:var(--branding-darkgreen);
+    border:2px solid var(--branding-darkgreen);
+    width:225px;
+    padding:16px 24px;
+    border-radius: 25px 0 0 25px;
+    margin-right:-4px;
+    outline: none;
+}
+.header-content input::placeholder{
+    color:var(--branding-darkgreen);
+}
+.header-content button{
+    border-radius: 0 25px 25px 0;
+}
+/*///////////// 3.2 Testimonial /////////////*/
+
+.testimonials blockquote{
+    width:100%;
+    background:#fff;
+    box-shadow:0 4px 15px rgba(0,0,0,0.2);
+    border-radius: 10px;
+    padding:50px 100px 50px 100px;
+    display: block;
+    position: relative;
+    font-size:1.2em;
+    line-height: 1.8;
+}
+.testimonials blockquote:before{
+    content:"";
+    background-image: url("../assets/icons/quote-left.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+    width:30px;
+    height: 30px;
+    position: absolute;
+    top:46px;
+    left:50px;
+}
+.testimonials blockquote:first-of-type{
+    margin-bottom: 50px;
+}
+.review-author img,
+.review-author .author-name{
+    display: inline-block;
+    vertical-align: middle;
+}
+.review-author{
+    margin-top:20px;
+}
+.review-author .author-name{
+    font-style: italic;
+    font-size:0.9em;
+}
+.review-author img{
+    width:44px;
+    height: 44px;
+    margin-right:24px;
+    border-radius: 22px;
+}
+
+/*///////////// 3.3 Support /////////////*/
+.support p{
+    margin: 24px 0px;
+}
+.support img{
+    border-radius: 10px;
+}
+
+/*///////////// 3.4 Faq /////////////*/
+.faq{
+    margin-bottom: 60px;
+}
+.faq details{
+    cursor: pointer;
+    margin-bottom: 24px;
+}
+.faq details p {
+    background:var(--branding-gray);
+    padding:24px;
+    border-radius: 10px;
+    color:#fff;
+    margin:16px 0;
+}
+
+/*///////////// 3.5 Footer /////////////*/
+footer{
+    background:var(--branding-darkgreen);
+    color:#fff;
+    text-align: center;
+    padding: 24px 0;
+    font-size: 0.8em;
+}
