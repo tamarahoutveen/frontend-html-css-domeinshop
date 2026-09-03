@@ -23,7 +23,6 @@ Table of Contents:
 :root{
    --branding-gray:#899CA0;
     --branding-darkgreen: #1C2B32;
-    /*--branding-darkgreen-hover: #203139;*/
 }
 
 
@@ -117,30 +116,30 @@ header{
 }
 /*///////////// 3.2 Testimonial /////////////*/
 
-.testimonials blockquote{
+.reviews blockquote{
     width:100%;
     background:#fff;
     box-shadow:0 4px 15px rgba(0,0,0,0.2);
     border-radius: 10px;
-    padding:50px 100px 50px 100px;
+    padding:50px 80px 50px 100px;
     display: block;
     position: relative;
     font-size:1.2em;
     line-height: 1.8;
 }
-.testimonials blockquote:before{
+.reviews blockquote:before{
     content:"";
     background-image: url("../assets/icons/quote-left.png");
     background-size: contain;
     background-repeat: no-repeat;
     display: block;
-    width:30px;
-    height: 30px;
+    width:28px;
+    height: 28px;
     position: absolute;
     top:46px;
     left:50px;
 }
-.testimonials blockquote:first-of-type{
+.reviews blockquote:first-of-type{
     margin-bottom: 50px;
 }
 .review-author img,
@@ -158,13 +157,13 @@ header{
 .review-author img{
     width:44px;
     height: 44px;
-    margin-right:24px;
+    margin-right:25px;
     border-radius: 22px;
 }
 
 /*///////////// 3.3 Support /////////////*/
 .support p{
-    margin: 24px 0px;
+    margin: 25px 0px;
 }
 .support img{
     border-radius: 10px;
@@ -172,18 +171,18 @@ header{
 
 /*///////////// 3.4 Faq /////////////*/
 .faq{
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 }
 .faq details{
     cursor: pointer;
-    margin-bottom: 24px;
+    margin-bottom: 25px;
 }
 .faq details p {
     background:var(--branding-gray);
-    padding:24px;
+    padding:25px;
     border-radius: 10px;
     color:#fff;
-    margin:16px 0;
+    margin:15px 0;
 }
 
 /*///////////// 3.5 Footer /////////////*/
@@ -191,6 +190,6 @@ footer{
     background:var(--branding-darkgreen);
     color:#fff;
     text-align: center;
-    padding: 24px 0;
+    padding: 25px 0;
     font-size: 0.8em;
 }
